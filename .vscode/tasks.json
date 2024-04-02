@@ -23,7 +23,6 @@
             "type": "shell",
             "command": "${workspaceFolder}/scripts/submit.sh",
             "args": [
-				"${fileBasenameNoExtension}",
 				"${file}",
 				"${relativeFileDirname}",
                 "${fileExtname}"

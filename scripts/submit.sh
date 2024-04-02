@@ -1,8 +1,9 @@
-problem_name=$1
-file=$2
-relative_file_dir_name=$3
-ext_name=$4
-contest_name=${relative_file_dir_name##*/}
+file=$1
+relative_file_dir_name=$2
+ext_name=$3
+problem_name=${relative_file_dir_name##*/}
+# スラッシュ区切りの後ろから二番目の文字列を取得
+contest_name=$(echo $relative_file_dir_name | awk -F'/' '{print $(NF-1)}')
 
 url=https://atcoder.jp/contests/${contest_name}/tasks/${contest_name}_${problem_name}
 
