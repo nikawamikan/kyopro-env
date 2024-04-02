@@ -12,4 +12,4 @@ for v in `ls -d ./${2}/*/`; do
 done
 
 # open vscode
-code ./${2}
+code ./${2}/contest.acc.json
