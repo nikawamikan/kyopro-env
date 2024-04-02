@@ -21,7 +21,7 @@
             "label": "submit",
             "group": "build",
             "type": "shell",
-            "command": "${workspaceFolder}/submit.sh",
+            "command": "${workspaceFolder}/scripts/submit.sh",
             "args": [
 				"${fileBasenameNoExtension}",
 				"${file}",
@@ -30,17 +30,21 @@
             ]
         },
         {
-            "label": "test",
+            "label": "inin_abc",
             "group": "build",
             "type": "shell",
-            "command": "${workspaceFolder}/test.sh",
+            "command": "${workspaceFolder}/scripts/init_abc.sh",
             "args": [
-				"${fileBasenameNoExtension}",
-				"${fileExtname}",
-				"${file}",
-				"${relativeFileDirname}",
-                "${workspaceFolder}/ac-library"
+				"${workspaceFolder}",
+                "${input:param}"
             ]
         }
-	]
+	],
+    "inputs": [
+        {
+            "id": "param", // ${input:***}で指定したID
+            "description": "Param1:", // 入力説明文
+            "type": "promptString" // 入力タイプ
+        }
+    ]
 }

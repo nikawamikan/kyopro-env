@@ -9,10 +9,11 @@
 				"ms-python.python",
 				"ms-vscode.cpptools",
 				"formulahendry.code-runner",
-				"vadimcn.vscode-lldb"
+				"vadimcn.vscode-lldb",
+				"ms-vscode.cpptools-extension-pack"
 			]
 		}
 	},
-	"postCreateCommand": "./post-create.sh",
+	"postCreateCommand": "./scripts/post-create.sh",
 	// "remoteUser": ""
 }
