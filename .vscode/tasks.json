@@ -42,7 +42,8 @@
     "inputs": [
         {
             "id": "param", // ${input:***}で指定したID
-            "description": "Param1:", // 入力説明文
+            "description": "Contest NAME:", // 入力説明文
+            "default": "abc", // デフォルト値
             "type": "promptString" // 入力タイプ
         }
     ]

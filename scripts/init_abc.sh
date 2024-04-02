@@ -3,6 +3,9 @@
 BASEDIR=${1}
 
 # init atcoder-cli 
+if [ ! -d "./ABC" ]; then
+    mkdir ABC
+fi
 cd ./ABC
 acc new ${2} -c all
 
