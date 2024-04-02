@@ -1,4 +1,2 @@
 [submodule "ac-library"]
 	path = ac-library
-	url = git@github.com:atcoder/ac-library.git
-	branch = production
